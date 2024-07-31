@@ -1,0 +1,541 @@
+* {
+  color: var(--primary-text-color);
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+}
+h1 {
+  font-size: 35px;
+  line-height: 64px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-align: left;
+}
+.middle-frame {
+  position: absolute;
+  top: 65%;
+}
+.breadcumb-section {
+  background-color: var(--secondary-background-color);
+}
+.breadcumb-section h1 {
+  margin-bottom: 0;
+}
+.breadcumb-section .container {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.breadcumb-section .breadcumb-list {
+  display: flex;
+  gap: 10px;
+}
+.breadcumb-section .breadcumb {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 400;
+  color: var(--ash-text-color);
+  border-right: 1px solid var(--ash-text-color);
+  padding-right: 10px;
+}
+.breadcumb-section .breadcumb:last-child {
+  border-right: none;
+}
+
+/* page-content starts from here */
+.page-content {
+  display: flex;
+  column-gap: 59px;
+  padding-top: 38px;
+}
+.page-content .side-nav {
+  min-width: 300px;
+  height: max-content;
+  border: 0.6px solid rgba(170, 179, 219, 1);
+  border-radius: 10px;
+  position: relative;
+}
+.page-content .side-nav.fixed {
+  position: fixed;
+  top: 92px;
+}
+
+.side-nav ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.side-nav .side-nav-parent > li {
+  border-bottom: 0.6px solid #aab3db;
+}
+
+.side-nav ul li {
+  width: 100%;
+}
+.side-nav ul li .side-nav-child {
+  background: #fafbff;
+  display: none;
+  transition: display ease-in-out 0.3s;
+}
+
+.side-nav .side-nav-parent li.active .side-nav-child {
+  display: block;
+}
+.side-nav ul > li > a,
+.side-nav ul > li > p {
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  color: var(--brand-color);
+  height: 72px;
+  padding: 0 25px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.page-content .middle-content {
+  width: 100%;
+}
+.page-content .fixed-side-nav {
+  padding-left: 359px;
+  height: 100vh;
+}
+.page-content .middle-content .content-wrapper {
+  display: flex;
+  column-gap: 50px;
+  padding-bottom: 60px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.page-content .middle-content .content-wrapper .text-content {
+  max-width: 378px;
+  padding-top: 40px;
+}
+
+.page-content .middle-content .content-wrapper .image-container {
+  width: 456px;
+  height: 456px;
+  overflow: hidden;
+  position: relative;
+}
+.page-content .middle-content .content-wrapper .kolektyvai-img-wrapper {
+  width: 405px;
+  height: 401px;
+}
+.image-container img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Pagrindiniai section starts here */
+.card {
+  border: 0.6px solid #e1e3ef;
+  border-radius: 15px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8f9fe 100%);
+  padding: 47px;
+  padding-bottom: 53px;
+}
+.card h3 {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 600;
+
+  margin-bottom: 30px;
+}
+.card ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.card > ul > li {
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 500;
+
+  position: relative;
+  padding-left: 79px;
+}
+.card .custom-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 37px;
+  height: 37px;
+  background-image: url(../images/list-icon.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card-2 {
+  margin-top: 30px;
+  row-gap: 30px;
+}
+.card-2 ul li {
+  padding-left: 0;
+}
+.card-2 ul li .title {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 600;
+}
+/* Pagrindiniai section ends here */
+
+/* Accordion section starts here */
+.accordion {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.accordion li div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 0.6px solid #aab3db;
+  padding: 10px 17px 10px 20px;
+  border-radius: 10px;
+  line-height: 16px;
+  font-weight: 500;
+}
+.accordion li div img {
+  transform: rotate(-90deg);
+  width: 11px;
+  height: 19px;
+  transition: transform ease-in-out 0.3s;
+}
+.accordion .active div img {
+  transform: rotate(90deg);
+}
+.accordion li .details {
+  padding: 24px 20px 35px;
+}
+
+.accordion .details {
+  display: none;
+  transition: display ease-in-out 0.3s;
+}
+
+.accordion li.active .details {
+  display: block;
+}
+
+/* Accordion section ends here */
+
+/* paragraph section starts here */
+.paragraph-sec {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  margin-bottom: 70px;
+}
+/* paragraph section ends here */
+
+/* Blog section starts here */
+.blog-sec .blog-wrapper {
+  display: flex;
+  column-gap: 15px;
+  row-gap: 25px;
+  flex-wrap: wrap;
+}
+.blog-sec .blog-wrapper .blog {
+  flex: 1 1 calc(33.333% - 10px);
+}
+.blog-sec .blog-wrapper .blog {
+  position: relative;
+}
+.blog-sec .blog-wrapper .blog .card {
+  height: 120px;
+  position: absolute;
+  width: calc(100% - 40px);
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 34px 27px;
+  bottom: 20px;
+  transform: translate(20px, 0px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 600;
+}
+/* Blog section ends here */
+
+/* Contact section starts here */
+.contact {
+  padding: 90px 0;
+}
+.contact .contact-card {
+  border: 0.6px solid #e1e3ef;
+  border-radius: 10px;
+  flex: 1 1 calc(25% - 13.5px);
+  max-width: calc(25% - 13.5px);
+}
+.contact .contact-list {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.contact .contact-card .person-detials {
+  padding-left: 20px;
+  padding-bottom: 40px;
+}
+.contact .contact-card .profile-pic {
+  border-radius: 10px;
+}
+.contact .contact-card .person-name {
+  font-size: 25px;
+  line-height: 26px;
+  font-weight: 600;
+  margin: 25px 0 9px;
+}
+.contact .contact-card .designation {
+  line-height: 25px;
+}
+.contact .contact-card .phone {
+  display: flex;
+  column-gap: 13px;
+  font-weight: 500;
+  line-height: 22px;
+  margin: 20px 0 12px;
+}
+.contact .contact-card .mail {
+  display: flex;
+  column-gap: 13px;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 500;
+}
+/* Contact section ends here */
+
+/* Map section starts here */
+#map {
+  height: 527px;
+  width: 100%;
+}
+
+/* Map section ends here */
+
+/* Paslaugos page styles starts from here */
+.page-content .card .info-list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.page-content .info-list li p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.card-info-list {
+  padding: 40px;
+  margin-bottom: 60px;
+}
+.page-content .card .info-list li:nth-child(1) img {
+  width: 15px;
+  height: 20px;
+}
+.page-content .card .info-list li:nth-child(2) img {
+  width: 17px;
+  height: 17px;
+}
+.page-content .card .info-list li:nth-child(3) img {
+  width: 17px;
+  height: 13px;
+}
+.page-content .card .info-list li:nth-child(4) img {
+  width: 10px;
+  height: 18px;
+}
+.page-content .card .info-list li:nth-child(1) {
+  flex: 1;
+}
+.page-content .card .info-list li:nth-child(2),
+.page-content .card .info-list li:nth-child(3),
+.page-content .card .info-list li:nth-child(4) {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+.page-content .card .info-list li {
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.page-content .text-card-wrapper {
+  display: flex;
+  column-gap: 11px;
+  padding-bottom: 60px;
+}
+.page-content .text-card {
+  background-color: #f8f9fe;
+  border-radius: 20px;
+  position: relative;
+  height: 285px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-content .text-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5%;
+  width: 103px;
+  height: 207px;
+  background-image: url(../images/cropped-irkc-icon.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.page-content .paragraph-sec-2 {
+  margin-bottom: 90px;
+}
+.slider-two {
+  padding-bottom: 90px;
+}
+.slider-three {
+  position: relative;
+  padding-bottom: 150px;
+}
+.slider-three .frame {
+  position: absolute;
+  bottom: -182px;
+  right: 0;
+}
+/* Paslaugos page styles ends here */
+
+/* Paslaugos page styles ends here */
+.profile-wrapper {
+  flex: 1;
+}
+.profile-wrapper .contact-card {
+  display: grid;
+  column-gap: 30px;
+  border: 0.6px solid #e1e3ef;
+  border-radius: 10px;
+  margin-top: 41px;
+  grid-template-columns: 151px 1fr;
+}
+.profile-wrapper .contact-card .profile-pic {
+  width: 100%;
+  height: 100%;
+}
+.profile-wrapper .contact-card .person-detials {
+  padding: 30px 0;
+}
+.page-content .singing-cover {
+  background: url("../images/singing-large.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 401px;
+  border-radius: 10px;
+  margin-bottom: 60px;
+}
+/* Paslaugos page styles ends here */
+
+/* Media Query */
+@media screen and (max-width: 1024px) {
+  .page-content {
+    flex-direction: column;
+  }
+  .page-content .middle-content .content-wrapper {
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+  }
+  .page-content .middle-content .content-wrapper .text-content {
+    max-width: 100%;
+  }
+  .page-content .middle-content .content-wrapper .image-container {
+    width: 100%;
+    height: auto;
+  }
+  .page-content .side-nav.fixed {
+    width: calc(100% - 30px);
+    background-color: #ffffff;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    z-index: 50;
+  }
+  .page-content .fixed-side-nav {
+    padding-left: 0;
+  }
+  .blog-sec .blog-wrapper .blog {
+    flex: 1 1 calc(50% - 20px);
+  }
+  .page-content .text-card-wrapper {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .page-content .card .info-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contact .contact-card {
+    flex: 1 1 calc(50% - 27px);
+    max-width: calc(50% - 27px);
+  }
+  .contact .contact-card .profile-pic {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 820px) {
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 568px) {
+  .page-content {
+    flex-direction: column;
+    row-gap: 40px;
+    margin-top: 60px;
+  }
+  .page-content .middle-content .content-wrapper .text-content {
+    max-width: 100%;
+    padding-top: 0;
+  }
+  .page-content .side-nav {
+    min-width: 100%;
+  }
+  .page-content .middle-content .content-wrapper {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+  .page-content .middle-content .content-wrapper .image-container {
+    width: 100%;
+    height: auto;
+  }
+  .page-content .card {
+    padding: 25px 15px;
+  }
+  .page-content .card > ul > li {
+    padding-left: 50px;
+  }
+  .page-content .text-card-wrapper {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .page-content .card-2 > ul > li {
+    padding-left: 0;
+  }
+  .blog-sec .blog-wrapper .blog {
+    flex: 100%;
+  }
+  #map {
+    height: 227px;
+  }
+  .contact .contact-card {
+    flex: 100%;
+    min-width: 100%;
+  }
+  .contact .contact-card .profile-pic {
+    width: 100%;
+  }
+}

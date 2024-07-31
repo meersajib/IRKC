@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v3.5.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.5.1/mapbox-gl.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/apie-mus.css" />
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .container {
+        margin: 0 auto;
+      }
+
+      *,
+      :before,
+      :after {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      .uppercase {
+        text-transform: uppercase;
+      }
+
+      button {
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        background: transparent;
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+    <link rel="stylesheet" href="./assets/css/media-query.css" />
+    <title>IRKC</title>
+  </head>
+
+  <body>
+    <div id="page">
+      <img class="middle-frame" src="./assets/images/frame.svg" alt="" />
+      <!-- Navigation section starts here -->
+      <header>
+        <div class="top-nav">
+          <div class="container">
+            <div>
+              <ul class="left">
+                <li>
+                  <a href="call-to:+370 386 52992">
+                    <img src="./assets/images/call.svg" alt="" />
+                    <p>+370 386 52992</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="mail-to:info@irkc.lt">
+                    <img src="./assets/images/envelope.svg" alt="" />
+                    <p>info@irkc.lt</p>
+                  </a>
+                </li>
+              </ul>
+              <ul class="right">
+                <li>
+                  <a href="#">
+                    <img src="./assets/images/search.svg" alt="" />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <img
+                      src="./assets/images/Easy_to_read_Logo-svg 1.svg"
+                      alt=""
+                    />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <img src="./assets/images/tree.svg" alt="" />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <img src="./assets/images/hands.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./assets/images/globe.svg" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="main-nav">
+          <div class="container">
+            <a href="index.html">
+              <img class="main-logo" src="./assets/images/logo.svg" alt="" />
+            </a>
+            <button
+              id="mobile_navigation"
+              class="smart_menu_caller"
+              aria-label="mobile menu"
+            >
+              <div class="hamburger-box">
+                <span></span><span></span><span></span><span></span>
+              </div>
+            </button>
+            <ul class="mobile-top-menu">
+              <li>
+                <a href="">
+                  <img class="icon" src="./assets/images/search.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img class="icon" src="./assets/images/book.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img class="icon" src="./assets/images/tree.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img class="icon" src="./assets/images/hand.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img class="icon" src="./assets/images/globe.png" alt="" />
+                </a>
+              </li>
+            </ul>
+
+            <ul class="mobile-contact-list">
+              <li>
+                <a href="">
+                  <img src="./assets/images/envelope-blue.svg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./assets/images/call-blue.svg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./assets/images/location-dot.svg" alt="" />
+                </a>
+              </li>
+            </ul>
+
+            <ul class="main-menu">
+              <li>
+                <a href="apie-mus.html"><span>Apie mus</span></a>
+              </li>
+              <li id="has_child" class="has-child">
+                <a href="paslaugos.html"><span>Paslaugos</span></a>
+                <ul id="child" class="child">
+                  <li>
+                    <a href="">
+                      <span
+                        >Scenos Techniniai Duomenys Scenos Techniniai Duomenys
+                        Scenos Techniniai Duomenys</span
+                      >
+                      <img
+                        class="desktop-arrow"
+                        src="./assets/images/small-blue-arrow.svg"
+                        alt=""
+                      />
+                      <img
+                        class="mobile-arrow"
+                        src="./assets/images/right-angle.svg"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href=""><span>Garso įranga</span></a>
+                  </li>
+                  <li>
+                    <a href=""><span>Apšvietimas</span></a>
+                  </li>
+                  <li>
+                    <a href=""><span>Lorem ipsum</span></a>
+                  </li>
+                  <li>
+                    <a href=""><span>Lorem ipsum</span></a>
+                  </li>
+                  <li>
+                    <a href=""><span>Lorem ipsum</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="kolektyvai.html"><span>Kolektyvai</span></a>
+              </li>
+              <li>
+                <a href="padaliniai.html"><span>Padaliniai</span></a>
+              </li>
+              <li>
+                <a href="edukacijos.html"><span>Edukacijos</span></a>
+              </li>
+              <li>
+                <a href="savanoryste.html"><span>Savanorystė</span></a>
+              </li>
+              <li>
+                <a href="kontaktai.html"><span>Kontaktai</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- Navigation section starts here -->
+      <!-- Breadcumb section starts here -->
+      <section class="breadcumb-section">
+        <div class="container">
+          <div class="breadcumb-list">
+            <span class="breadcumb"> Titulinis </span>
+            <span class="breadcumb"> Apie mus </span>
+          </div>
+          <h1>Apie mus</h1>
+        </div>
+      </section>
+      <!-- page content section starts here -->
+      <div class="page-content container">
+        <div class="side-nav">
+          <ul class="side-nav-parent">
+            <li>
+              <p>Apie mus</p>
+              <ul class="side-nav-child">
+                <li><a href="">Nuostatai</a></li>
+                <li><a href="">Projektai</a></li>
+                <li><a href="">Tvarkos, aprašai</a></li>
+              </ul>
+            </li>
+            <li><p>Lorem ipsum</p></li>
+            <li><p>Lorem ipsum</p></li>
+          </ul>
+        </div>
+        <div class="middle-content">
+          <div class="content-wrapper">
+            <div class="text-content">
+              Tuometiniai kultūros namai buvo įkurti apie 1976 metus. Dabartinis
+              Ignalinos rajono kultūros centras puoselėja, skleidžia įvairias
+              kultūros sritis ir žanrus. Mūsų tikslas – puoselėti etninę
+              kultūrą, mėgėjų meną, inicijuoti, rengti ir įgyvendinti
+              kultūrinius, meninius, edukacinius projektus, plėtoti šviečiamąją
+              (edukacinę), pramoginę veiklą, tenkinti bendruomenės kultūrinius
+              poreikius, organizuoti profesionalaus meno sklaidą. Kultūros
+              centras ugdo įvairių visuomenės socialinių bei amžiaus grupių
+              poreikį menui, dalyvavimą kūrybinėje veikloje, profesionalaus meno
+              pažinimui bei užtikrina visapusišką Ignalinos krašto meninės
+              kultūros sklaidą šalyje ir užsienyje.
+            </div>
+            <div class="image-container">
+              <img src="./assets/images/building.png" alt="" />
+            </div>
+          </div>
+          <!-- Pagrindiniai section starts here -->
+          <div class="card">
+            <h3>Pagrindiniai kultūros centro uždaviniai:</h3>
+            <ul class="custom-list">
+              <li>saugoti ir puoselėti nacionalinės kultūros tapatybę;</li>
+              <li>
+                sudaryti sąlygas etninės kultūros sklaidai, laiduoti etninės
+                kultūros perimamumą; 
+              </li>
+              <li>skatinti kūrybinę veiklą ir meno įvairovę;</li>
+              <li>skatinti meno mėgėjų, liaudies meno veiklą ir plėtrą;</li>
+              <li>
+                sudaryti sąlygas rajono žmonėms dalyvauti kultūrinėje veikloje;
+              </li>
+              <li>
+                pristatyti Kultūros centro kūrėjų, mėgėjų ir atlikėjų meną
+                rajone, šalyje ir užsienyje.
+              </li>
+            </ul>
+          </div>
+          <div class="card card-2">
+            <h3>Pagrindiniai kultūros centro veiklos kryptys:</h3>
+            <ul>
+              <li>
+                <p class="title">Mėgėjų menas</p>
+                <p class="item">
+                  Kultūros centro mėgėjų meninės veiklos kolektyvų kuravimas, jų
+                  koncertinės veiklos organizavimas
+                </p>
+              </li>
+              <li>
+                <p class="title">Profesionalusis menas</p>
+                <p class="item">
+                  Profesionalių kolektyvų koncertinės veiklos organizavimas.
+                </p>
+              </li>
+              <li>
+                <p class="title">Laisvalaikio kultūra</p>
+                <p class="item">
+                  Pramoginių renginių, festivalių, parodų organizavimas.
+                </p>
+              </li>
+              <li>
+                <p class="title">Liaudies kūryba</p>
+                <p class="item">
+                  Etninės kultūros tęstinumo, vietos tradicijų išsaugojimo
+                  užtikrinimas.
+                </p>
+              </li>
+              <li>
+                <p class="title">Vaikai ir jaunimas</p>
+                <p class="item">
+                  Vaikų ir jaunimo užimtumo ir laisvalaikio organizavimas.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <!-- Pagrindiniai section ends here -->
+          <!-- Accordion section starts form here -->
+          <ul class="accordion">
+            <li>
+              <div>
+                <h4>Tekstas</h4>
+                <img src="./assets/images/slider-button.svg" alt="" />
+              </div>
+              <p class="details">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.
+              </p>
+            </li>
+            <li>
+              <div>
+                <h4>Tekstas</h4>
+                <img src="./assets/images/slider-button.svg" alt="" />
+              </div>
+              <p class="details">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.
+              </p>
+            </li>
+            <li>
+              <div>
+                <h4>Tekstas</h4>
+                <img src="./assets/images/slider-button.svg" alt="" />
+              </div>
+              <p class="details">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.
+              </p>
+            </li>
+            <li>
+              <div>
+                <h4>Tekstas</h4>
+                <img src="./assets/images/slider-button.svg" alt="" />
+              </div>
+              <p class="details">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.
+              </p>
+            </li>
+          </ul>
+          <!-- Accordion section ends form here -->
+          <!-- Paragraph section starts here -->
+          <div class="paragraph-sec">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <!-- Paragraph section ends here -->
+        </div>
+      </div>
+      <!-- page content ends here -->
+
+      <!-- Blog section starts  here-->
+      <section class="container blog-sec">
+        <h1>Sąrašas</h1>
+        <div class="blog-wrapper">
+          <div class="blog">
+            <img src="./assets/images/blog-1.png" alt="" />
+            <div class="card">
+              <p>Quis autem vel eum iure reprehenderit</p>
+              <a href="">
+                <img src="./assets/images/arrow.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="blog">
+            <img src="./assets/images/blog-2.png" alt="" />
+            <div class="card">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              <a href="">
+                <img src="./assets/images/arrow.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="blog">
+            <img src="./assets/images/blog-3.png" alt="" />
+            <div class="card">
+              <p>Excepteur sint occaecat cupidatat non proident</p>
+              <a href="">
+                <img src="./assets/images/arrow.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="blog">
+            <img src="./assets/images/blog-4.png" alt="" />
+            <div class="card">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              <a href="">
+                <img src="./assets/images/arrow.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="blog">
+            <img src="./assets/images/blog-5.png" alt="" />
+            <div class="card">
+              <p>Excepteur sint occaecat cupidatat non proident</p>
+              <a href="">
+                <img src="./assets/images/arrow.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="blog">
+            <img src="./assets/images/blog-6.png" alt="" />
+            <div class="card">
+              <p>Quis autem vel eum iure reprehenderit</p>
+              <a href="">
+                <img src="./assets/images/arrow.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Blog section ends  here-->
+      <!-- Contact person section starts  here-->
+      <section class="contact">
+        <div class="container">
+          <h1>Kontaktai</h1>
+          <div class="contact-list">
+            <div class="contact-card">
+              <img
+                class="profile-pic"
+                src="./assets/images/contact-1.png"
+                alt=""
+              />
+              <div class="person-detials">
+                <h3 class="person-name">Asta Sieliūnienė</h3>
+                <p class="designation">Direktorė</p>
+                <a href="call-to:+370 686 95225" class="phone">
+                  <img src="./assets/images/call-blue.svg" alt="" />
+                  <p>+370 686 95225</p>
+                </a>
+                <a href="mail-to:asta.sieliuniene@irkc.lt" class="mail">
+                  <img src="./assets/images/envelope-blue.svg" alt="" />
+                  <p>asta.sieliuniene@irkc.lt</p>
+                </a>
+              </div>
+            </div>
+            <div class="contact-card">
+              <img
+                class="profile-pic"
+                src="./assets/images/contact-2.png"
+                alt=""
+              />
+              <div class="person-detials">
+                <h3 class="person-name">Asta Sieliūnienė</h3>
+                <p class="designation">Direktorė</p>
+                <a href="call-to:+370 686 95225" class="phone">
+                  <img src="./assets/images/call-blue.svg" alt="" />
+                  <p>+370 686 95225</p>
+                </a>
+                <a href="mail-to:asta.sieliuniene@irkc.lt" class="mail">
+                  <img src="./assets/images/envelope-blue.svg" alt="" />
+                  <p>asta.sieliuniene@irkc.lt</p>
+                </a>
+              </div>
+            </div>
+            <div class="contact-card">
+              <img
+                class="profile-pic"
+                src="./assets/images/contact-1.png"
+                alt=""
+              />
+              <div class="person-detials">
+                <h3 class="person-name">Asta Sieliūnienė</h3>
+                <p class="designation">Direktorė</p>
+                <a href="call-to:+370 686 95225" class="phone">
+                  <img src="./assets/images/call-blue.svg" alt="" />
+                  <p>+370 686 95225</p>
+                </a>
+                <a href="mail-to:asta.sieliuniene@irkc.lt" class="mail">
+                  <img src="./assets/images/envelope-blue.svg" alt="" />
+                  <p>asta.sieliuniene@irkc.lt</p>
+                </a>
+              </div>
+            </div>
+            <div class="contact-card">
+              <img
+                class="profile-pic"
+                src="./assets/images/contact-2.png"
+                alt=""
+              />
+              <div class="person-detials">
+                <h3 class="person-name">Asta Sieliūnienė</h3>
+                <p class="designation">Direktorė</p>
+                <a href="call-to:+370 686 95225" class="phone">
+                  <img src="./assets/images/call-blue.svg" alt="" />
+                  <p>+370 686 95225</p>
+                </a>
+                <a href="mail-to:asta.sieliuniene@irkc.lt" class="mail">
+                  <img src="./assets/images/envelope-blue.svg" alt="" />
+                  <p>asta.sieliuniene@irkc.lt</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact person section ends  here-->
+
+      <!-- Location map starts here -->
+
+      <div id="map"></div>
+
+      <!-- Location map ends here -->
+
+      <!-- Footer starts here -->
+      <footer>
+        <div class="container">
+          <div class="footer-top">
+            <div class="footer-logo">
+              <img class="logo" src="./assets/images/footer-logo.svg" alt="" />
+              <div class="social-links">
+                <a href="">
+                  <img src="./assets/images/fb.svg" alt="" />
+                </a>
+                <a href="">
+                  <img src="./assets/images/instagram-footer.svg" alt="" />
+                </a>
+                <a href="">
+                  <img src="./assets/images/youtube-footer.svg" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="footer-address">
+              <div class="address-wrapper">
+                <div class="address">
+                  <img src="./assets/images/location-dot.svg" alt="" />
+                  <div>
+                    <p class="address-title">
+                      Ignalinos rajono kultūros centras
+                    </p>
+                    <p>Ateities g. 43, LT-30119, Ignalina</p>
+                  </div>
+                </div>
+                <p class="kodas">Įmonės kodas: 305616878</p>
+              </div>
+              <div class="phone">
+                <p class="phone-title">Bilietų kasa</p>
+                <div class="phone-details">
+                  <img src="./assets/images/call-blue.svg" alt="" />
+                  <a href="call-to=+370 615 91323"> +370 615 91323 </a>
+                </div>
+              </div>
+              <div class="phone">
+                <p class="phone-title">Direktorius</p>
+                <div class="phone-details">
+                  <img src="./assets/images/call-blue.svg" alt="" />
+                  <a href="call-to=+370 686 95225"> +370 686 95225 </a>
+                </div>
+              </div>
+              <div class="mail">
+                <img src="./assets/images/envelope-blue.svg" alt="" />
+                <a href="mail-to=info@irkc.lt"> info@irkc.lt </a>
+              </div>
+            </div>
+            <div class="footer-nav">
+              <p class="nav-title">Informacija</p>
+              <ul>
+                <li>
+                  <a href="">
+                    <img src="./assets/images/arrow.svg" alt="" />
+                    <p>Administracinė informacija</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="./assets/images/arrow.svg" alt="" />
+                    <p>Korupcijos prevencija</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="./assets/images/arrow.svg" alt="" />
+                    <p>Asmens duomenų apsauga</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="./assets/images/arrow.svg" alt="" />
+                    <p>Teisinė informacija</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="./assets/images/arrow.svg" alt="" />
+                    <p>Veiklos sritys</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="./assets/images/arrow.svg" alt="" />
+                    <p>Kontaktai</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="apklausa">
+              <p class="apklausa-title">Apklausa</p>
+              <p>
+                Kviečiame įvertinti
+                <span>Všį Ignalinos rajono kultūros centro</span> paslaugų
+                kokybę
+              </p>
+              <a href="">
+                <span>Vertinti</span>
+                <img src="./assets/images/white-arrow.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-bottom-links">
+              <ul>
+                <li>
+                  <a href="">
+                    Ignalinos rajono kultūros centras . Visos teisės saugomos
+                  </a>
+                </li>
+                <li><a href=""> Slapukų parinktys </a></li>
+                <li><a href=""> Duomenų apsauga </a></li>
+              </ul>
+            </div>
+            <div class="copyright">
+              <a href="">Sukurta: TEXUS</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer ends here -->
+    </div>
+
+    <!-- Additional scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/map.js"></script>
+    <script src="./assets/js/custom.js"></script>
+  </body>
+</html>

@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .container {
+        margin: 0 auto;
+      }
+
+      *,
+      :before,
+      :after {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      .uppercase {
+        text-transform: uppercase;
+      }
+
+      button {
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        background: transparent;
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+    <link rel="stylesheet" href="./assets/css/media-query.css" />
+    <title>IRKC</title>
+  </head>
+
+  <body>
+    <div id="page">
+      <!-- Navigation section starts here -->
+      <header>
+        <div class="top-nav">
+          <div class="container">
+            <div>
+              <ul class="left">
+                <li>
+                  <a href="call-to:+370 386 52992">
+                    <img src="./assets/images/call.svg" alt="" />
+                    <p>+370 386 52992</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="mail-to:info@irkc.lt">
+                    <img src="./assets/images/envelope.svg" alt="" />
+                    <p>info@irkc.lt</p>
+                  </a>
+                </li>
+              </ul>
+              <ul class="right">
+                <li>
+                  <a href="#">
+                    <img src="./assets/images/search.svg" alt="" />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <img
+                      src="./assets/images/Easy_to_read_Logo-svg 1.svg"
+                      alt=""
+                    />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <img src="./assets/images/tree.svg" alt="" />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <img src="./assets/images/hands.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./assets/images/globe.svg" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="main-nav">
+          <div class="container">
+            <a href="index.html">
+              <img class="main-logo" src="./assets/images/logo.svg" alt="" />
+            </a>
+            <button
+              id="mobile_navigation"
+              class="smart_menu_caller"
+              aria-label="mobile menu"
+            >
+              <div class="hamburger-box">
+                <span></span><span></span><span></span><span></span>
+              </div>
+            </button>
+            <ul class="mobile-top-menu">
+              <li>
+                <a href="">
+                  <img class="icon" src="./assets/images/search.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img class="icon" src="./assets/images/book.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img class="icon" src="./assets/images/tree.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img class="icon" src="./assets/images/hand.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img class="icon" src="./assets/images/globe.png" alt="" />
+                </a>
+              </li>
+            </ul>
+
+            <ul class="mobile-contact-list">
+              <li>
+                <a href="">
+                  <img src="./assets/images/envelope-blue.svg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./assets/images/call-blue.svg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./assets/images/location-dot.svg" alt="" />
+                </a>
+              </li>
+            </ul>
+
+            <ul class="main-menu">
+              <li>
+                <a href="apie-mus.html"><span>Apie mus</span></a>
+              </li>
+              <li id="has_child" class="has-child">
+                <a href="paslaugos.html"><span>Paslaugos</span></a>
+                <ul id="child" class="child">
+                  <li>
+                    <a href="">
+                      <span
+                        >Scenos Techniniai Duomenys Scenos Techniniai Duomenys
+                        Scenos Techniniai Duomenys</span
+                      >
+                      <img
+                        class="desktop-arrow"
+                        src="./assets/images/small-blue-arrow.svg"
+                        alt=""
+                      />
+                      <img
+                        class="mobile-arrow"
+                        src="./assets/images/right-angle.svg"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href=""><span>Garso įranga</span></a>
+                  </li>
+                  <li>
+                    <a href=""><span>Apšvietimas</span></a>
+                  </li>
+                  <li>
+                    <a href=""><span>Lorem ipsum</span></a>
+                  </li>
+                  <li>
+                    <a href=""><span>Lorem ipsum</span></a>
+                  </li>
+                  <li>
+                    <a href=""><span>Lorem ipsum</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="kolektyvai.html"><span>Kolektyvai</span></a>
+              </li>
+              <li>
+                <a href="padaliniai.html"><span>Padaliniai</span></a>
+              </li>
+              <li>
+                <a href="edukacijos.html"><span>Edukacijos</span></a>
+              </li>
+              <li>
+                <a href="savanoryste.html"><span>Savanorystė</span></a>
+              </li>
+              <li>
+                <a href="kontaktai.html"><span>Kontaktai</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- Navigation section starts here -->
+      <!-- Cover Section Starts here -->
+      <section class="">
+        <div class="bg-cover">
+          <div class="content">
+            <h1>Pamatyk save kultūroje!</h1>
+            <div class="button-wrapper">
+              <a href="" class="button">
+                <span>Renginiai</span>
+                <img src="./assets/images/white-arrow.svg" alt="" />
+              </a>
+              <a href="" class="button">
+                <span>Kolektyvai</span>
+                <img src="./assets/images/white-arrow.svg" alt="" />
+              </a>
+              <a href="" class="button">
+                <span>Padaliniai</span>
+                <img src="./assets/images/white-arrow.svg" alt="" />
+              </a>
+              <a href="" class="button">
+                <span>Projektai</span>
+                <img src="./assets/images/white-arrow.svg" alt="" />
+              </a>
+              <a href="" class="button">
+                <span>Savanorystė</span>
+                <img src="./assets/images/white-arrow.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Cover Section ends here -->
+
+      <!-- Naujienos Section Starts here -->
+      <section class="container">
+        <div class="section-header">
+          <h2>Naujienos</h2>
+          <a class="button" href="">
+            <span>Visos naujienos</span>
+            <img src="./assets/images/white-arrow.svg" alt="" />
+          </a>
+        </div>
+        <div class="slider-wrapper-sec">
+          <div class="swiper-button-wrapper">
+            <div class="gallery-swiper-button-prev swiper-button-prev"></div>
+            <div class="gallery-swiper-button-next swiper-button-next"></div>
+          </div>
+          <div class="swiper gallery-slider">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="./assets/images/2.png" alt="" />
+                <div class="card">
+                  <p>Dokumentinio filmo „Nugalėti Galijotą” peržiūra</p>
+                  <a href="">
+                    <img src="./assets/images/arrow.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/3.png" alt="" />
+                <div class="card">
+                  <p>Respublikinis šokių festivalis „Šokanti Ignalina“ 2024</p>
+                  <a href="">
+                    <img src="./assets/images/arrow.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/4.png" alt="" />
+                <div class="card">
+                  <p>Ąžuoliuko sodinimo ceremonija</p>
+                  <a href="">
+                    <img src="./assets/images/arrow.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/3.png" alt="" />
+                <div class="card">
+                  <p>Dokumentinio filmo „Nugalėti Galijotą” peržiūra</p>
+                  <a href="">
+                    <img src="./assets/images/arrow.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Naujienos Section ends here -->
+
+      <!-- Gegužė Section starts here -->
+      <section class="calender-section-wrapper">
+        <img
+          class="top-img"
+          src="./assets/images/cropped-irkc-icon.svg"
+          alt=""
+        />
+        <div class="container">
+          <div class="event-wrapper">
+            <div class="calender">
+              <div class="calender-top">
+                <div class="calender-header">
+                  <h3>Gegužė</h3>
+                  <p>Trečiadienis, 05-19</p>
+                </div>
+                <div class="month-switcher">
+                  <button>
+                    <img src="./assets/images/left-angle.svg" alt="" />
+                  </button>
+                  <button>
+                    <img src="./assets/images/right-angle.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div class="calender-table">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>P</th>
+                      <th>A</th>
+                      <th>T</th>
+                      <th>K</th>
+                      <th>P</th>
+                      <th>Š</th>
+                      <th>S</th>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="disabled-date">1</td>
+                      <td class="disabled-date">2</td>
+                      <td class="disabled-date">3</td>
+                      <td class="disabled-date">4</td>
+                    </tr>
+                    <tr>
+                      <td><span class="disabled-date">5</span></td>
+                      <td><span class="disabled-date">6</span></td>
+                      <td><span class="disabled-date">7</span></td>
+                      <td><span class="disabled-date">8</span></td>
+                      <td><span class="disabled-date">9</span></td>
+                      <td><span class="disabled-date">10</span></td>
+                      <td><span class="disabled-date">11</span></td>
+                    </tr>
+                    <tr>
+                      <td><span class="disabled-date">12</span></td>
+                      <td><span class="disabled-date">13</span></td>
+                      <td><span>14</span></td>
+                      <td><span>15</span></td>
+                      <td><span>16</span></td>
+                      <td><span>17</span></td>
+                      <td><span>18</span></td>
+                    </tr>
+                    <tr>
+                      <td><span class="active-date">19</span></td>
+                      <td><span>20</span></td>
+                      <td><span>21</span></td>
+                      <td><span>22</span></td>
+                      <td><span>23</span></td>
+                      <td><span>24</span></td>
+                      <td><span>25</span></td>
+                    </tr>
+                    <tr>
+                      <td><span>26</span></td>
+                      <td><span>27</span></td>
+                      <td><span>28</span></td>
+                      <td><span>29</span></td>
+                      <td><span>30</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="event">
+              <h3>Renginiai</h3>
+              <ul>
+                <li>
+                  <div class="date-month-wrapper">
+                    <p class="date">19</p>
+                    <p class="month">Gegužės</p>
+                  </div>
+                  <div class="event-details">
+                    <p class="event-title">Ąžuoliuko sodinimo ceremonija</p>
+                    <p class="event-time">
+                      <img src="./assets/images/clock.svg" alt="" />
+                      <span>18:00 -19:00</span>
+                    </p>
+                    <p class="event-location">
+                      <img src="./assets/images/location-dot.svg" alt="" />
+                      <span
+                        >Prie Ignalinos rajono kultūros centro (Ateities g.
+                        43)</span
+                      >
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="date-month-wrapper">
+                    <p class="date">19</p>
+                    <p class="month">Gegužės</p>
+                  </div>
+                  <div class="event-details">
+                    <p class="event-title">Ąžuoliuko sodinimo ceremonija</p>
+                    <p class="event-time">
+                      <img src="./assets/images/clock.svg" alt="" />
+                      <span>18:00 -19:00</span>
+                    </p>
+                    <p class="event-location">
+                      <img src="./assets/images/location-dot.svg" alt="" />
+                      <span
+                        >Prie Ignalinos rajono kultūros centro (Ateities g.
+                        43)</span
+                      >
+                    </p>
+                  </div>
+                </li>
+              </ul>
+              <a class="view-details" href="">
+                <span>Visi renginiai</span>
+                <img src="./assets/images/white-arrow.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <img
+          class="bottom-img"
+          src="./assets/images/cropped-irkc-icon-2.svg"
+          alt=""
+        />
+      </section>
+      <!-- Gegužė Section ends here -->
+
+      <!-- Apie mus Section starts here -->
+      <section class="container">
+        <div class="apie-mus-sec">
+          <div class="heading">
+            <h2>Apie mus</h2>
+            <a class="daugiau" href="">
+              <span>Daugiau</span>
+              <img src="./assets/images/white-arrow.svg" alt="" />
+            </a>
+          </div>
+          <div class="details">
+            <p>
+              Dabartinis Ignalinos rajono kultūros centras puoselėja, skleidžia
+              įvairias kultūros sritis ir žanrus. Mūsų tikslas – puoselėti
+              etninę kultūrą, mėgėjų meną, inicijuoti, rengti ir įgyvendinti
+              kultūrinius, meninius, edukacinius projektus, plėtoti šviečiamąją
+              (edukacinę), pramoginę veiklą, tenkinti bendruomenės kultūrinius
+              poreikius, organizuoti profesionalaus meno sklaidą. 
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Apie mus Section ends here -->
+
+      <!-- Cover section starts here -->
+      <section class="cover"></section>
+      <!-- Cover section ends here -->
+      <!-- partneriai section starts here -->
+      <section class="container partneriai-sec">
+        <div class="social-media-wrapper">
+          <div class="facebook">
+            <p>Sekite mūsų naujienas</p>
+            <img src="./assets/images/facebook.svg" alt="" />
+          </div>
+          <div class="instagram">
+            <p>Bendraukime Instagram</p>
+            <img src="./assets/images/instagram.svg" alt="" />
+          </div>
+          <div class="youtube">
+            <p>Video įrašai</p>
+            <img src="./assets/images/youtube.svg" alt="" />
+          </div>
+        </div>
+        <div class="partneriai">
+          <img class="frame" src="./assets/images/frame.svg" alt="" />
+          <div class="partneriai-top">
+            <div class="partneriai-header">
+              <h3>Mūsų draugai ir partneriai</h3>
+              <!-- navigation buttons -->
+              <div class="swiper-button-wrapper">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+            <div class="swiper client-slider">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="./assets/images/client.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/client.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/client.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/client.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/client.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/client.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/client.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/client.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- partneriai section ends here -->
+
+      <!-- Footer starts here -->
+      <footer>
+        <div class="container">
+          <div class="footer-top">
+            <div class="footer-logo">
+              <img class="logo" src="./assets/images/footer-logo.svg" alt="" />
+              <div class="social-links">
+                <a href="">
+                  <img src="./assets/images/fb.svg" alt="" />
+                </a>
+                <a href="">
+                  <img src="./assets/images/instagram-footer.svg" alt="" />
+                </a>
+                <a href="">
+                  <img src="./assets/images/youtube-footer.svg" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="footer-address">
+              <div class="address-wrapper">
+                <div class="address">
+                  <img src="./assets/images/location-dot.svg" alt="" />
+                  <div>
+                    <p class="address-title">
+                      Ignalinos rajono kultūros centras
+                    </p>
+                    <p>Ateities g. 43, LT-30119, Ignalina</p>
+                  </div>
+                </div>
+                <p class="kodas">Įmonės kodas: 305616878</p>
+              </div>
+              <div class="phone">
+                <p class="phone-title">Bilietų kasa</p>
+                <div class="phone-details">
+                  <img src="./assets/images/call-blue.svg" alt="" />
+                  <a href="call-to=+370 615 91323"> +370 615 91323 </a>
+                </div>
+              </div>
+              <div class="phone">
+                <p class="phone-title">Direktorius</p>
+                <div class="phone-details">
+                  <img src="./assets/images/call-blue.svg" alt="" />
+                  <a href="call-to=+370 686 95225"> +370 686 95225 </a>
+                </div>
+              </div>
+              <div class="mail">
+                <img src="./assets/images/envelope-blue.svg" alt="" />
+                <a href="mail-to=info@irkc.lt"> info@irkc.lt </a>
+              </div>
+            </div>
+            <div class="footer-nav">
+              <p class="nav-title">Informacija</p>
+              <ul>
+                <li>
+                  <a href="">
+                    <img src="./assets/images/arrow.svg" alt="" />
+                    <p>Administracinė informacija</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="./assets/images/arrow.svg" alt="" />
+                    <p>Korupcijos prevencija</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="./assets/images/arrow.svg" alt="" />
+                    <p>Asmens duomenų apsauga</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="./assets/images/arrow.svg" alt="" />
+                    <p>Teisinė informacija</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="./assets/images/arrow.svg" alt="" />
+                    <p>Veiklos sritys</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="./assets/images/arrow.svg" alt="" />
+                    <p>Kontaktai</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="apklausa">
+              <p class="apklausa-title">Apklausa</p>
+              <p>
+                Kviečiame įvertinti
+                <span>Všį Ignalinos rajono kultūros centro</span> paslaugų
+                kokybę
+              </p>
+              <a href="">
+                <span>Vertinti</span>
+                <img src="./assets/images/white-arrow.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-bottom-links">
+              <ul>
+                <li>
+                  <a href="">
+                    Ignalinos rajono kultūros centras . Visos teisės saugomos
+                  </a>
+                </li>
+                <li><a href=""> Slapukų parinktys </a></li>
+                <li><a href=""> Duomenų apsauga </a></li>
+              </ul>
+            </div>
+            <div class="copyright">
+              <a href="">Sukurta: TEXUS</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer ends here -->
+    </div>
+
+    <!-- Additional scripts -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+  </body>
+</html>
